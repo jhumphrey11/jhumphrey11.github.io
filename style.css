@@ -10,5 +10,8 @@ padding: 10px;
 body {
 width:  725px
 }
+ol li {
+padding-left: 10px;
+}
 
 
