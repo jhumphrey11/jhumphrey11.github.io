@@ -1,19 +1,24 @@
+/* adds margins to my entire page */
 html { 
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 10px;
 margin-left: 10px;
 }
+/* adds pixel padding to my header */
 header h1 {
 padding: 10px;
 }
+/* makes my body 725 wide and webpage lightblue*/
 body {
 width:  725px
 background-color: lightblue;
 }
+/* makes my list padded to the left*/
 ol li {
 padding-left: 10px;
 }
+/* adds a dark blue border around my image and moves the postion of it*/
 img {
   border: 5px solid #0000ff;
   postion: absolute;
