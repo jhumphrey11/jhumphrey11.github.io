@@ -13,5 +13,8 @@ width:  725px
 ol li {
 padding-left: 10px;
 }
+img {
+  border: 5px solid #0000ff;
+}
 
 
