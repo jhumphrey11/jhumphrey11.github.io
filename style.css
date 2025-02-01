@@ -9,6 +9,7 @@ padding: 10px;
 }
 body {
 width:  725px
+background-color: lightblue;
 }
 ol li {
 padding-left: 10px;
@@ -18,5 +19,6 @@ img {
   postion: absolute;
   right: 10px;
 }
+
 
 
