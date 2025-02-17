@@ -5,6 +5,14 @@
     <!-- This displays the name of my website and description-->
     <title>Welcome To Jakyi's Website</title>
     <meta name="description" content="Bikes">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css"> 
+    <script> src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script> type="text/javascript">
+  $(document).ready(function(){
+       $('#nav_menu').slicknav({prependTo:"#moblie_menu"});
+});
+</script>
   </head>
   <body> 
     <header>
@@ -19,6 +27,13 @@
       <li> Road Bike 1</li>
       <li> Dirt Bike 2</li>
     </ol>
+    <ul>
+      <li><a href="index.htm" class="current">Home</a></li>
+      <li><a href="sales.htm">Sales</a></li>
+      <li><a href="rentals.htm" >Rentals</a></li>
+      <li><a href="services.htm" >Services</a></li>
+      <li><a href="contact.htm" class="lastitem">Contact</a></li>
+    </ul>
   </body>
   <link rel="stylesheet" href="style.css">
   <pre>
@@ -29,10 +44,3 @@
     
   </pre>
 </html>
-<script> src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script> type="text/javascript">
-  $(document).ready(function(){
-    
-    $('#nav_menu').slicknav({prependTo:"#moblie_menu"});
-});
-</script>
