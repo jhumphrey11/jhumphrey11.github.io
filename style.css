@@ -1,4 +1,34 @@
-/* adds margins to my entire page */
+/* Made by Jakyi Humphrey */
+/* Code for desktop layout and tablet layout */
+@media only screen and (max-width: 2024px) {
+  #moblie_menu { display: none; }
+}
+/* Code for tablet layout */
+@media only screen and (max-width: 959px) {
+  #moblie_menu { display: none; }
+}
+/* Code for mobile layout */
+@media only screen and (max-width: 767px) {
+  #moblie_menu { display: block; }
+  #nav_menu { display: none; }
+  header h2 { font-size: 1.300em; }
+  header h3 { font-size: .8060em; }
+  p { font-size: .875em; }
+  article h1, main h2, aside h2
+    { font-size: 1em; }
+  aside li { font-size: .870em; }
+}
+/* Code for moblie portrait layout */
+  @media only screen and (max-width: 479px) {
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.360em; }
+    header h3 { font-size: .8100em; }
+    p { font-size: .860em; }
+    article h1, main h2, aside h2
+      { font-size: 1em; }
+    aside li { font-size: .860em; }
+  }
 html { 
 margin-top: 10px;
 margin-bottom: 10px;
@@ -24,6 +54,19 @@ img {
   postion: absolute;
   right: 10px;
 }
+/* Navigation css for aligned left */
+#nav_menu ul {
+  list-style-type: none; padding: 1em 0;
+  font-size: 1.4em;
+  text-align: left;
+}
+#nav_menu ul li {
+  display: inline;
+  padding: 0 1em; }
+#nav_menu ul li a {
+  font-weight: bold;
+  color : #0000FF; }
+#nav_menu ul li a.current { text-decoration: none; }
 
 
 
