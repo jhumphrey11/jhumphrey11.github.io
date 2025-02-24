@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<!-- Jakyi Humphrey,Southern Illinois University Carbondale,1/22/2025,1/22/2025-->
-<html lang="en-US">
-  <head>
-    <!-- This displays the name of my website and description-->
-    <title>Welcome To Jakyi's Website</title>
-    <meta name="description" content="Bikes">
-  </head>
-  <body> 
-    <header>
-      <!-- This inserts my bikecycle image-->
-      <h1> Here are the different bikes we sell</h1>
-      <img src="simple.png" width="600">
-    </header>
-    <!-- This displays the title of my website-->
-  <h2>This is Jakyi's Bike Shop </h2>
-    <!-- This adds a description to my website that talks about what type of bikes we sell-->
-    <h2>At jakyis bike shop we sell 6 differnet types of bikes. Ranging from Road Bikes,City Bikes, and Hybrid Bikes</h2>
-    <!-- This lists the 4 bikes that my shop sells, specifically mountain and city bikes.-->
-    <ol>
-      <li> Dual Sport Bike </li>
-      <li> City Bike </li>
-      <li> Hyber Bikecycle Havoc </li>
-      <li> Specialized RockHopper</li>
-    </ol>
-    <!-- This gives a name, image, and description of each bike that I will be selling on my website.-->
-    <title> Dual Sport Bike </title>
-    <img src="OIP.jpeg" width="400">
-    <p> This is a medium-priced bike that is quite durable. It has an acceleration capability. </p>
-    <title> City Bike </title>
-    <img src="city.jpg">
-    <p> This is a relatively cheap bike. Mainly meant to be used in the city. Its fast and lightweight. $100.00</p>
-    <title> Hyper Bikecycle Havoc</title>
-    <img>
-    <p> Durable steel dual suspension Mountain Bike frame
+<!-- Jakyi Humphrey  -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rentals</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="description" content="rental bicycles"> <meta name="keywords" content="Jakyi's bicycles, street bikes, mountain bikes, rentals">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header><h1>Rentals Jakyi's Bicycles</h1>
+         
+        <link rel="stylesheet" href="styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        </header>
+        <!-- Navigation Menu  -->
+        <nav id="mobile_menu"></nav> 
+        <nav id="nav_menu"> 
+            <ul>
+                <li><a href="index.htm">Home</a> </li> 
+                <li><a href="sales.htm">Sales</a></li> 
+                <li><a href="rentals.htm" class="current">Rentals</a></li>
+                <li><a href="services.htm" >Services</a></li> 
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul> 
+        </nav>
+        <h2> Your bike is going to be fast, cheap, and ready at whatever time you need it!</h2>
+        <!-- 1st column Road Bikes  -->
+        <main>
+            <h2>Rent a Road Bike for $100 per day</h2>
+            <h2>1.) Road Bike - Mens</h2>
+            <p class ="first">Dual Sport Bike: Fast, Duriable, Cheap</p>
+            <h2>2.) Rent a City Bike</h2>
+            <p class ="first">This is a relatively cheap bike. Mainly meant to be used in the city. Its fast and lightweight. $100.00</p>
+        </main>
+        <!-- 1st column Mountain Bikes  -->
+        <aside>
+            <h2>Rent an Hyber Bikecycle Havoc for $100 per day</h2>
+            <h2>1.) Hyber Bikecycle Havoc </h2>
+            <p class ="first">Durable steel dual suspension Mountain Bike frame
         Front suspension fork and rear coil shock
         21 speed twist shifters with Shimano® rear derailleur</p>
-    <title> Specialized RockHopper </title>
-    <img>
-    <p> Better performance. Better value. Better Rockhopper. 
+            <h2>2.) Specialized RockHopper</h2>
+            <p class ="first">Better performance. Better value. Better Rockhopper. 
       By tapping the fit and handling advantages of pairing each rider with their ideal wheel size 
       and suspension that works its hardest for everyone thanks to our size-specific Rx Tune.</p>
-  </body>
-  <link rel="stylesheet" href="style.css">
-  <!-- This is a short terms and conditions I have for my website. And any disclaimers that I have for people that purchase my bike-->
-  <pre> 
-    Terms and Conditions:
+        </aside> 
+        
+        <!-- Rental terms  -->
+    <footer>
+        <h2>Rental Terms and Conditions</h2></footer>
+        <p class ="first"> Terms and Conditions:
     By purchasing from Jakyi's Bike Shop, you agree to the following terms: all products are subject to availability, and prices may change without notice. 
     Returns are accepted within [X] days with a valid receipt, and items must be unused and in original condition. 
     Repairs and services are provided based on agreed terms, and we are not responsible for any injuries or damages from product use. Payment is required in full before goods or services are provided. 
     We respect your privacy and will not share your personal information. Shipping charges apply, and delivery times vary. 
-    These terms are subject to change without notice.
-  <pre>
-  Store Address:
-  Jakyi Humphrey
-  1355 Point Dr
-    
-    
-  </pre>
+    These terms are subject to change without notice. </p>
+        <!-- Bike Image  -->
+        <img src="images/city.jpg>
+    </body>
 </html>
