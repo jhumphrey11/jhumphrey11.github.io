@@ -68,5 +68,26 @@ img {
   color : #0000FF; }
 #nav_menu ul li a.current { text-decoration: none; }
 
+/* Style for the image container */
+.image-container {
+    width: 500px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image */
+    margin: 0 auto;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensures the corners are rounded properly */
+}
+
+/* Style for the image */
+#mainImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for rollover effect */
+}
+
+/* Hover effect for image */
+.image-container:hover #mainImage {
+    content: url('image2.jpg'); /* Change the image on hover */
+}
 
 
