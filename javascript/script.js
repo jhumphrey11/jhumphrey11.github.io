@@ -1,12 +1,16 @@
+const mainImage = document.getElementById("mainImage");
+const hoverImage = document.getElementById("hoverImage");
 
-const imageElement = document.getElementById("mainImage");
-
-imageElement.addEventListener("mouseover", () => {
-    imageElement.src = "image2.jpg"; // Image changes when mouse is over
+// When mouse hovers over the image, show the second image
+mainImage.addEventListener("mouseover", () => {
+  mainImage.style.display = "none"; // Hide the first image
+  hoverImage.style.display = "block"; // Show the second image
 });
 
-imageElement.addEventListener("mouseout", () => {
-    imageElement.src = "image1.jpg"; // Image changes back when mouse leaves
+// When mouse leaves the image, show the first image again
+mainImage.addEventListener("mouseout", () => {
+  mainImage.style.display = "block"; // Show the first image
+  hoverImage.style.display = "none"; // Hide the second image
 });
 
 /* the video container */
