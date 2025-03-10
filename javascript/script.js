@@ -1,4 +1,4 @@
-// Optional: If you want to use JavaScript for more control over the rollover effect, you can do it like this:
+
 const imageElement = document.getElementById("mainImage");
 
 imageElement.addEventListener("mouseover", () => {
