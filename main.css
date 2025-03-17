@@ -1,114 +1,210 @@
 /* Made by Jakyi Humphrey */
+
 /* Code for desktop layout and tablet layout */
 @media only screen and (max-width: 2024px) {
-  #moblie_menu { display: none; }
+  #mobile_menu { display: none; }
 }
+
 /* Code for tablet layout */
 @media only screen and (max-width: 959px) {
-  #moblie_menu { display: none; }
+  #mobile_menu { display: none; }
 }
+
 /* Code for mobile layout */
 @media only screen and (max-width: 767px) {
-  #moblie_menu { display: block; }
+  #mobile_menu { display: block; }
   #nav_menu { display: none; }
   header h2 { font-size: 1.300em; }
   header h3 { font-size: .8060em; }
   p { font-size: .875em; }
-  article h1, main h2, aside h2
-    { font-size: 1em; }
+  article h1, main h2, aside h2 { font-size: 1em; }
   aside li { font-size: .870em; }
 }
-/* Code for moblie portrait layout */
-  @media only screen and (max-width: 479px) {
-    #mobile_menu { display: block; }
-    #nav_menu { display: none; }
-    header h2 { font-size: 1.360em; }
-    header h3 { font-size: .8100em; }
-    p { font-size: .860em; }
-    article h1, main h2, aside h2
-      { font-size: 1em; }
-    aside li { font-size: .860em; }
-  }
+
+/* Code for mobile portrait layout */
+@media only screen and (max-width: 479px) {
+  #mobile_menu { display: block; }
+  #nav_menu { display: none; }
+  header h2 { font-size: 1.360em; }
+  header h3 { font-size: .8100em; }
+  p { font-size: .860em; }
+  article h1, main h2, aside h2 { font-size: 1em; }
+  aside li { font-size: .860em; }
+}
+
 html { 
-margin-top: 10px;
-margin-bottom: 10px;
-margin-right: 10px;
-margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
-/* adds pixel padding to my header */
+
+/* Adds pixel padding to my header */
 header h1 {
-padding: 10px;
+  padding: 10px;
 }
-/* makes my body 725 wide and webpage lightblue*/
+
+/* Makes my body 725px wide and webpage lightblue */
 body {
-width:  725px
-background-color: lightblue;
+  width: 725px;
+  background-color: lightblue;
+  margin: 0 auto; /* Center the content */
+  font-family: Arial, sans-serif; /* Set a default font */
 }
-/* makes my list padded to the left*/
+
+/* Makes my list padded to the left */
 ol li {
-padding-left: 10px;
+  padding-left: 10px;
 }
-/* adds a dark blue border around my image and moves the postion of it*/
+
+/* Adds a dark blue border around my image and moves the position of it */
 img {
   border: 5px solid #0000ff;
-  postion: absolute;
+  position: absolute;
   right: 10px;
+  top: 10px; /* Ensure positioning is consistent */
+  transition: transform 0.3s ease; /* Add smooth transition for image movement */
 }
+
+img:hover {
+  transform: scale(1.05); /* Slight zoom on hover for interaction */
+}
+
 /* Navigation css for aligned left */
 #nav_menu ul {
-  list-style-type: none; padding: 1em 0;
+  list-style-type: none; 
+  padding: 1em 0;
   font-size: 1.4em;
   text-align: left;
 }
+
 #nav_menu ul li {
   display: inline;
-  padding: 0 1em; }
+  padding: 0 1em; 
+}
+
 #nav_menu ul li a {
   font-weight: bold;
-  color : #0000FF; }
-#nav_menu ul li a.current { text-decoration: none; }
+  color: #0000FF;
+}
+
+#nav_menu ul li a.current {
+  text-decoration: none;
+}
 
 /* Style for the image container */
 .image-container {
-    width: 500px; /* Set the width of the image */
-    height: 300px; /* Set the height of the image */
-    margin: 0 auto;
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Ensures the corners are rounded properly */
-    position: relative; /* Required for positioning images */
+  width: 100%; 
+  max-width: 500px; /* Ensure image does not exceed max width */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px; 
+  overflow: hidden; 
+  position: relative;
 }
 
 /* Style for the main image */
 #mainImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    position: absolute; /* Positioning it on top of the other image */
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Style for the hover image */
 #hoverImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    position: absolute; /* Positioned on top of the main image */
-    top: 0;
-    left: 0;
-    opacity: 0; /* Initially hidden */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+  transition: opacity 0.3s ease;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 /* Hover effect: on hover, the main image fades out and the hover image fades in */
 .image-container:hover #mainImage {
-    opacity: 0; /* Hide main image */
+  opacity: 0;
 }
 
 .image-container:hover #hoverImage {
-    opacity: 1; /* Show hover image */
+  opacity: 1;
 }
 
+/* Added smooth transitions for images */
+.image-container img {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+}
 
+.image-container:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+  opacity: 0.9;
+}
 
+/* Improve mobile responsiveness further */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%; /* Make the body width 100% for very small screens */
+    padding: 10px; /* Add padding to avoid content touching the screen edges */
+  }
+  
+  header h1, header h2 {
+    font-size: 1.2em; /* Reduce header text size */
+  }
+
+  #nav_menu ul li {
+    display: block; /* Stack navigation items vertically on small screens */
+    text-align: center; /* Center align text */
+    padding: 1em 0; /* Increase padding for touch devices */
+  }
+
+  #nav_menu ul li a {
+    font-size: 1.2em; /* Increase font size for better readability on small screens */
+  }
+  
+  img {
+    position: relative; /* Remove absolute positioning for images in small screen */
+    margin: 0 auto; /* Center images */
+    display: block;
+    max-width: 100%; /* Ensure images scale properly on smaller screens */
+    height: auto;
+  }
+
+  .image-container {
+    max-width: 100%; /* Ensure container width adjusts to screen size */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .video-container video {
+    width: 100%; /* Make the video responsive on smaller screens */
+    height: auto;
+  }
+
+  footer {
+    font-size: 1em; /* Increase footer text size on mobile */
+  }
+}
+
+/* Additional subtle hover effects for buttons/links */
+a:hover, a:focus {
+  text-decoration: underline; /* Underline on hover for better visual feedback */
+  color: #0066cc; /* Change color on hover for better contrast */
+}
+
+/* Adjust image sizes in footer */
+footer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style for audio player to ensure it's responsive */
+audio {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
