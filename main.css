@@ -75,19 +75,40 @@ img {
     margin: 0 auto;
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Ensures the corners are rounded properly */
+    position: relative; /* Required for positioning images */
 }
 
-/* Style for the image */
+/* Style for the main image */
 #mainImage {
     width: 100%;
     height: 100%;
     border-radius: 15px; /* Ensures the image inside the container has rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for rollover effect */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    position: absolute; /* Positioning it on top of the other image */
+    top: 0;
+    left: 0;
 }
 
-/* Hover effect for image */
-.image-container:hover #mainImage {
-    content: url('image2.jpg'); /* Change the image on hover */
+/* Style for the hover image */
+#hoverImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    position: absolute; /* Positioned on top of the main image */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hidden */
 }
+
+/* Hover effect: on hover, the main image fades out and the hover image fades in */
+.image-container:hover #mainImage {
+    opacity: 0; /* Hide main image */
+}
+
+.image-container:hover #hoverImage {
+    opacity: 1; /* Show hover image */
+}
+
 
 
