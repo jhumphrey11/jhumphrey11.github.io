@@ -73,13 +73,21 @@
             <option value="WY">Wyoming</option>
         </select>
         <br><br>
-        <input type="submit" value="Submit">
       <label for="zipcode">Zipcode:</label>
       <input type="zipcode" name="zipcode" id="zipcode" autofocus required
         pattern="[1-10]"> <br>
       <label for="phone number">Phone Number:</label>
       <input type="phone number" name="phone number" id="phone number" autofocus required
         pattern="[1-10]"> <br>
+       <h2>Enter a message (50-200 characters):</h2>
+    <form id="messageForm">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" minlength="50" maxlength="200" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="messageError" class="error"></p>
+       <input type="submit" value="Submit">
+      
       
       
       
