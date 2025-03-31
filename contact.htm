@@ -19,6 +19,7 @@
           pattern="[A-Za-z] {2}" title="Must be 2 characters"> <br>
   <h1>Please select the state you live in:</h1>
     <form>
+       <!-- This code allows a person to choose any state in the selected options -->
         <label for="states">Choose your state:</label>
         <select id="states" name="states">
             <option value="AL">Alabama</option>
@@ -90,7 +91,7 @@
       <h2>Select Your Inquiry and Item Type</h2>
 
     <form action="#">
-        <!-- TYPE of Inquiry -->
+        <!-- The type of inquiry the user wants to choose just incase they run into a error-->
         <fieldset>
             <legend>TYPE of Inquiry</legend>
             <label for="inquiry_general">
@@ -104,7 +105,7 @@
             </label><br>
         </fieldset>
 
-        <!-- TYPE of ITEM -->
+        <!-- TYPE of bike the user wants to choose -->
         <fieldset>
             <legend>TYPE of ITEM</legend>
             <label for="havoc bike">
@@ -114,10 +115,10 @@
                 <input type="radio" id="hyper bike" name="hyper bike" value="hyper bike"> Hyper Bike
             </label><br>
             <label for="city bike">
-                <input type="city bike" id="city bike" name="city bike" value="city bike"> City Bike
+                <input type="radio" id="city bike" name="city bike" value="city bike"> City Bike
             </label><br>
             <label for=" Specialized RockHopper">
-                <input type=" Specialized RockHopper" id=" Specialized RockHopper" name=" Specialized RockHopper" value=" Specialized RockHopper">  Specialized RockHopper
+                <input type="radio" id=" Specialized RockHopper" name=" Specialized RockHopper" value=" Specialized RockHopper">  Specialized RockHopper
             </label><br>
         </fieldset>
 
