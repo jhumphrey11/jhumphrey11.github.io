@@ -4,53 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Table</title>
-    <style>
-        /* Basic styling for the table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 1px solid black;
-        }
-        
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        /* Responsive design: when screen size is 470px or less */
-        @media screen and (max-width: 470px) {
-            table, th, td {
-                width: 100%;
-                display: block;
-                box-sizing: border-box;
-            }
-
-            th, td {
-                display: block;
-                width: 100%;
-                text-align: right;
-            }
-
-            th {
-                text-align: left;
-            }
-
-            td {
-                padding-left: 10px;
-                position: relative;
-                padding-top: 10px;
-            }
-
-            td:before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                font-weight: bold;
-            }
-        }
-    </style>
+    
 </head>
 <body>
 
