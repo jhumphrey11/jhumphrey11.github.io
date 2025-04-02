@@ -155,4 +155,8 @@ img {
                 font-weight: bold;
             }
         }
+body {
+  background-color: green;
+  color: white;
+}
     </style>
