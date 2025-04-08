@@ -214,10 +214,6 @@ h2 {
   transition: all 0.3s ease;
 }
 
-.main-image {
-  max-width: 100%;
-  height: auto;
-}
 
 .hover-image {
   position: absolute;
