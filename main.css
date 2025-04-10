@@ -171,13 +171,13 @@ height: 350px;
   box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
   padding-top: 20px;
-  margin: 0;
 }
 
 /* Header Section */
@@ -188,56 +188,24 @@ header {
   padding: 30px 0;
 }
 
-/* Heading Styles */
 h1 {
   font-size: 3em;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 1.5em;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Image Section */
-.image-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  position: relative;
-  width: 100%;
-}
-
-.image-container img {
-  border-radius: 15px;
-  transition: all 0.3s ease;
-}
-
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover .hover-image {
-  opacity: 1;
-}
-
-.image-container:hover .main-image {
-  opacity: 0;
+  color: #333;
+  margin: 20px auto 10px auto;
+  text-align: center;
 }
 
 /* Navigation Menu */
 #nav_menu ul {
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background-color: #222;
   list-style-type: none;
   padding: 10px 0;
   margin: 0;
@@ -250,12 +218,16 @@ h2 {
 #nav_menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s;
+  font-size: 1.1em;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#nav_menu ul li a:hover {
-  color: #f39c12;
+#nav_menu ul li a:hover,
+#nav_menu ul li a.current {
+  background-color: #f39c12;
+  color: #fff;
 }
 
 /* Mobile Menu */
@@ -263,36 +235,57 @@ h2 {
   display: none;
 }
 
+/* Image Section */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  border-radius: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.image-container:hover .main-image {
+  opacity: 0;
+}
+
 /* Main Video Section */
 .video-container {
   text-align: center;
-  margin-top: 30px;
+  margin: 40px auto;
 }
 
 video {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
-
-footer pre {
-  font-size: 1.2em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* List Styling */
 ol {
   list-style-type: decimal;
   padding-left: 40px;
-  margin-top: 20px;
+  margin: 30px auto;
+  max-width: 800px;
 }
 
 ol li {
@@ -300,23 +293,56 @@ ol li {
   margin-bottom: 10px;
 }
 
-/* Static Image Section */
+/* Static Image Styling */
 img[alt="Another Static Image"] {
   display: block;
   margin: 20px auto;
   width: 80%;
   max-width: 600px;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Audio */
+/* Audio Element */
 audio {
   display: none;
 }
 
-/* Favicon and Browser Styling */
-link[rel="icon"] {
-  margin-left: 20px;
+/* Favicon (no styling needed for link tag) */
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1em;
+  margin-top: 40px;
+}
+
+footer pre {
+  font-size: 1.1em;
+  white-space: pre-wrap;
+}
+
+/* Home Icon */
+#homeIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#homeIcon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+#homeIcon img:hover {
+  transform: scale(1.1);
 }
 
 /* Responsive Design */
@@ -341,9 +367,9 @@ link[rel="icon"] {
   #nav_menu ul li {
     margin: 10px 0;
   }
-  
+
   .video-container video {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -355,10 +381,10 @@ link[rel="icon"] {
   h2 {
     font-size: 1.2em;
   }
+
+  #homeIcon {
+    top: 10px;
+    left: 10px;
+  }
 }
 
-body {
-  background-color: lightgreen;
-  color: white;
-}
-    </style>
