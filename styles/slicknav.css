@@ -1,7 +1,6 @@
 /*!
  * SlickNav Responsive Mobile Menu v1.0.10
- * (c) 2016 Josh Cope
- * licensed under MIT
+ * From Jakyi
  */
 .slicknav_btn {
   position: relative;
@@ -102,7 +101,7 @@
   color: #fff;
   margin: 0;
   padding: 0;
-  font-size: 0.875em;
+  font-size: 1.8em;
   list-style: none;
   overflow: hidden; }
   .slicknav_nav ul {
