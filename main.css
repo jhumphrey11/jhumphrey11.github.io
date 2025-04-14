@@ -1,394 +1,5 @@
 /* Made by Jakyi Humphrey */
-/* Code for desktop layout and tablet layout */
-@media only screen and (max-width: 2024px) {
-  #moblie_menu { display: none; }
-}
-/* Code for tablet layout */
-@media only screen and (max-width: 959px) {
-  #moblie_menu { display: none; }
-}
-/* Code for mobile layout */
-@media only screen and (max-width: 767px) {
-  #moblie_menu { display: block; }
-  #nav_menu { display: none; }
-  header h2 { font-size: 1.300em; }
-  header h3 { font-size: .8060em; }
-  p { font-size: .875em; }
-  article h1, main h2, aside h2
-    { font-size: 1em; }
-  aside li { font-size: .870em; }
-}
-/* Code for moblie portrait layout */
-  @media only screen and (max-width: 479px) {
-    #mobile_menu { display: block; }
-    #nav_menu { display: none; }
-    header h2 { font-size: 1.360em; }
-    header h3 { font-size: .8100em; }
-    p { font-size: .860em; }
-    article h1, main h2, aside h2
-      { font-size: 1em; }
-    aside li { font-size: .860em; }
-  }
-html { 
-margin-top: 10px;
-margin-bottom: 10px;
-margin-right: 10px;
-margin-left: 10px;
-}
-/* adds pixel padding to my header */
-header h1 {
-display: block;
-font-weight: bold;
-font-size: 2.5em;
-padding-top: .25em;
-margin-bottom: 1em
-border-bottom: 1px solid black;
-}
-/* makes my body 725 wide and webpage lightblue*/
-body {
-width:  725px
-background-color: lightblue;
-}
-/* makes my list padded to the left*/
-ol li {
-padding-left: 10px;
-}
-/* adds a dark blue border around my image and moves the postion of it*/
-img {
-width: 100%;
-min-width: 300px;
-max-width: 1024px;
-position: relative;
-margin: 0 auto;
-max-width: 630px;
-height: 350px;
-}
-/* Navigation css for aligned left */
-#nav_menu ul {
-  list-style-type: none; padding: 1em 0;
-  font-size: 1.4em;
-  text-align: left;
-}
-#nav_menu ul li {
-  display: inline;
-  padding: 0 1em; }
-#nav_menu ul li a {
-  font-weight: bold;
-  color : #0000FF; }
-#nav_menu ul li a.current { text-decoration: none; }
 
-/* Style for the image container */
-.image-container {
-    width: 500px; /* Set the width of the image */
-    height: 300px; /* Set the height of the image */
-    margin: 0 auto;
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Ensures the corners are rounded properly */
-    position: relative; /* Required for positioning images */
-}
-
-/* Style for the main image */
-#mainImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    position: absolute; /* Positioning it on top of the other image */
-    top: 0;
-    left: 0;
-}
-
-/* Style for the hover image */
-#hoverImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px; /* Ensures the image inside the container has rounded corners */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    position: absolute; /* Positioned on top of the main image */
-    top: 0;
-    left: 0;
-    opacity: 0; /* Initially hidden */
-}
-
-/* Hover effect: on hover, the main image fades out and the hover image fades in */
-.image-container:hover #mainImage {
-    opacity: 0; /* Hide main image */
-}
-
-.image-container:hover #hoverImage {
-    opacity: 1; /* Show hover image */
-}
-<style>
-        /* Basic styling for the table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 1px solid black;
-        }
-        
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        /* Responsive design: when screen size is 470px or less */
-        @media screen and (max-width: 470px) {
-            table, th, td {
-                width: 100%;
-                display: block;
-                box-sizing: border-box;
-            }
-
-            th, td {
-                display: block;
-                width: 100%;
-                text-align: right;
-            }
-
-            th {
-                text-align: left;
-            }
-
-            td {
-                padding-left: 10px;
-                position: relative;
-                padding-top: 10px;
-            }
-
-            td:before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                font-weight: bold;
-            }
-        }
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base Styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  padding-top: 20px;
-}
-
-/* Header Section */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-}
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin: 20px auto 10px auto;
-  text-align: center;
-}
-
-/* Navigation Menu */
-#nav_menu ul {
-  display: flex;
-  justify-content: center;
-  background-color: #222;
-  list-style-type: none;
-  padding: 10px 0;
-  margin: 0;
-}
-
-#nav_menu ul li {
-  margin: 0 20px;
-}
-
-#nav_menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#nav_menu ul li a:hover,
-#nav_menu ul li a.current {
-  background-color: #f39c12;
-  color: #fff;
-}
-
-/* Mobile Menu */
-#moblie_menu {
-  display: none;
-}
-
-/* Image Section */
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  position: relative;
-  width: 100%;
-}
-
-.image-container img {
-  border-radius: 15px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-  opacity: 0;
-}
-
-.image-container:hover .hover-image {
-  opacity: 1;
-}
-
-.image-container:hover .main-image {
-  opacity: 0;
-}
-
-/* Main Video Section */
-.video-container {
-  text-align: center;
-  margin: 40px auto;
-}
-
-video {
-  max-width: 80%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* List Styling */
-ol {
-  list-style-type: decimal;
-  padding-left: 40px;
-  margin: 30px auto;
-  max-width: 800px;
-}
-
-ol li {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-/* Static Image Styling */
-img[alt="Another Static Image"] {
-  display: block;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Audio Element */
-audio {
-  display: none;
-}
-
-/* Favicon (no styling needed for link tag) */
-
-/* Footer Styling */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1em;
-  margin-top: 40px;
-}
-
-footer pre {
-  font-size: 1.1em;
-  white-space: pre-wrap;
-}
-
-/* Home Icon */
-#homeIcon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-#homeIcon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
-}
-
-#homeIcon img:hover {
-  transform: scale(1.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
-  .image-container {
-    flex-direction: column;
-  }
-
-  #nav_menu ul {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  #nav_menu ul li {
-    margin: 10px 0;
-  }
-
-  .video-container video {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  #homeIcon {
-    top: 10px;
-    left: 10px;
-  }
-}
-
-/* this is new*/
 /* Base Reset */
 * {
   margin: 0;
@@ -396,29 +7,29 @@ footer pre {
   box-sizing: border-box;
 }
 
-/* Body Style */
-body {
+/* Body and HTML */
+html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
+  background-color: #f0f0f0;
+  color: #222;
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Navigation Bar */
+/* Navigation Styles */
 nav {
-  background-color: #1e2a38;
+  background-color: #111;
   padding: 15px 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  align-items: center;
-  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li a {
@@ -427,92 +38,166 @@ nav ul li a {
   font-weight: bold;
   padding: 8px 14px;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: #3b4a5a;
+nav ul li a:hover,
+nav ul li a.current {
+  background-color: #444;
 }
 
-/* Home Icon */
-#homeIcon img {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+/* Mobile Nav Toggle */
+#mobile_menu {
+  display: none;
 }
 
-/* Page Container */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-}
-
-/* Headings */
-h1, h2, h3 {
-  margin-bottom: 15px;
-  color: #1e2a38;
-}
-
-/* Paragraphs */
-p {
+/* Heading Styles */
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  font-size: 1rem;
+  color: #111;
 }
 
-/* Images */
+h2, h3 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+/* List Styles */
+ol {
+  list-style: decimal;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+ol li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
   display: block;
-  border-radius: 8px;
-  margin: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Videos */
+/* Specific smaller size for all images */
+img {
+  width: 300px;
+  height: auto;
+}
+
+/* Image Rollover Container */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#mainImage, #hoverImage {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+#hoverImage {
+  opacity: 0;
+}
+
+.image-container:hover #mainImage {
+  opacity: 0;
+}
+
+.image-container:hover #hoverImage {
+  opacity: 1;
+}
+
+/* Video Section */
+.video-container {
+  text-align: center;
+  margin: 40px auto;
+}
+
 video {
   max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  margin: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
-/* Buttons (if you use them) */
-button, .btn {
-  background-color: #1e90ff;
+/* Audio (Hidden but playing) */
+audio {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
   color: #fff;
-  border: none;
-  padding: 10px 18px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
   border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-button:hover, .btn:hover {
-  background-color: #0f6fc3;
+footer pre {
+  font-size: 1em;
+  white-space: pre-wrap;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Media Queries */
+@media only screen and (max-width: 767px) {
+  #nav_menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+  }
+
   nav ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .container {
-    padding: 20px;
+  h1 {
+    font-size: 2rem;
   }
 
-  #homeIcon img {
-    width: 24px;
-    height: 24px;
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .image-container {
+    width: 250px;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .image-container {
+    width: 200px;
+  }
+}
