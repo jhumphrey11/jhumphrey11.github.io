@@ -1,132 +1,109 @@
 <!DOCTYPE html>
-<!-- Jakyi Humphrey, Southern Illinois University Carbondale, 1/22/2025, 1/22/2025-->
+<!-- Jakyi Humphrey, Southern Illinois University Carbondale, 1/22/2025 -->
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <!-- This displays the name of my website and description-->
-    <title>Jakyi's Bike Shop</title>
-    <meta name="description" content="Bikes">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="styles/slicknav.css">
-    <nav id="nav_menu">
-      <ul>
-        <li><a href="index.htm" class="current">Home</a></li>
-        <li><a href="sales.htm">Sales</a></li>
-        <li><a href="rentals.htm">Rentals</a></li>
-        <li><a href="service.htm">Services</a></li>
-        <li><a href="contact.htm" class="lastitem">Contact</a></li>
-      </ul>
-    </nav>
-
-     <h1>Jakyi's Bikes</h1>
- <div class="image-container">
-  <img src="image/R.jpg" alt="Main Image" id="mainImage" class="main-image">
-  <img src="image/white.jpg" alt="Main Image Hover" id="hoverImage" class="hover-image">
-</div>
-
-    
-    <!-- Website Description -->
-    <h2>At Jakyi's bike shop we sell 6 different types of bikes. Ranging from Road Bikes, City Bikes, and Hybrid Bikes</h2>
-    
-    
-    <h2>We have the best bikes in the game!</h2>
-    <!-- List of Bikes -->
-    <ol>
-      <li>Havoc Bike</li>
-      <li>City Bike</li>
-      <li>Hyper Bike</li>
-      <li>Specialized Rockhopper Bike</li>
-    </ol>
-
-    <!-- Navigation Menu -->
-    <nav id="moblie_menu"></nav>
-    
-
-    
-    <!-- jQuery script (should be loaded properly) -->
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#nav_menu').slicknav({prependTo:"#moblie_menu"});
-      });
-    </script>
-    <meta name="description" content="A small bike shop with 5 different types of bikes">
-    <meta name="keywords" content="miller, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon (shortcut icon) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-  </head>
-  
-  <body> 
-    <!-- Main Header with image and video section -->
-    <header>
-      
-      <!-- Video Section -->
-      <main>
-        <section class="video-container">
-          <video id="promoVideo" width="50%" height="auto" controls autoplay>
-            <source src="video/black.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </section>
-      </main>
-      
-      <!-- Static Image -->
-      <img src="simple.png" width="600" alt="Static Image">
-
-    </header>
-
-    <!-- Audio that plays automatically in Chrome/Firefox -->
-    <audio autoplay loop>
-      <source src="piano.wav" type="audio/wav">
-    </audio>
-
-    <!-- Site Heading -->
-   
-    <!-- Footer with store address -->
-   
-
-    <!-- Another Image with no rollover effect -->
-    <img src="image/white.jpg" width="600" alt="Another Static Image">
-
-  </body>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A small bike shop with 6 different types of bikes">
+  <meta name="keywords" content="bikes, road bikes, mountain bikes, rentals, sales, GT, BMX">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakyi's Bike Shop</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-   <footer>
-      <pre>
-      Store Address:
-        Jakyi Humphrey
-        1355 Point Dr
-      </pre>
-    </footer>
-  
-  <!-- Additional Script for the image rollover effect -->
-  <script>
-    // Image rollover effect
-    const mainImage = document.getElementById("mainImage");
+  <!-- jQuery + Slicknav -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="scripts/jquery.slicknav.min.js"></script>
 
-    mainImage.addEventListener("mouseover", () => {
-      mainImage.src = "image/white.jpg"; // Change to another image on hover
-    });
-
-    mainImage.addEventListener("mouseout", () => {
-      mainImage.src = "image/R.jpg"; // Revert back when mouse leaves
-    });
-  </script>
-
-  <!-- Style for the rounded corner effect -->
+  <!-- Style for images -->
   <style>
     .image-container img {
-      border-radius: 15px; /* Rounded corners */
+      border-radius: 15px;
       transition: all 0.3s ease;
     }
-    
-    /* Responsive image styling */
     .main-image {
-      max-width: 100%; /* Makes the image responsive */
+      max-width: 100%;
       height: auto;
     }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
   </style>
+</head>
+
+<body>
+  <!-- Navigation Menu -->
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html" class="lastitem">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile_menu"></nav>
+
+  <!-- Heading -->
+  <h1>Jakyi's Bikes</h1>
+
+  <!-- Main Image with Hover Effect -->
+  <div class="image-container">
+    <img src="image/R.jpg" alt="Main Bike Image" id="mainImage" class="main-image">
+  </div>
+
+  <!-- Website Description -->
+  <h2>At Jakyi's Bike Shop, we sell 6 different types of bikes including Road Bikes, City Bikes, and Hybrid Bikes.</h2>
+  <h2>We have the best bikes in the game!</h2>
+
+  <!-- List of Bikes -->
+  <ol>
+    <li>Havoc Bike</li>
+    <li>City Bike</li>
+    <li>Hyper Bike</li>
+    <li>Specialized Rockhopper Bike</li>
+  </ol>
+
+  <!-- Static Image -->
+  <img src="image/white.jpg" width="600" alt="Another Static Image">
+
+  <!-- Audio Player (fixed: Chrome requires controls or user interaction) -->
+  <audio controls autoplay loop>
+    <source src="piano.wav" type="audio/wav">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- Footer -->
+  <footer>
+    <pre>
+Store Address:
+  Jakyi Humphrey
+  1355 Point Dr
+    </pre>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Slicknav activation
+    $(document).ready(function () {
+      $('#nav_menu ul').slicknav({ prependTo: "#mobile_menu" });
+    });
+
+    // Image rollover effect
+    const mainImage = document.getElementById("mainImage");
+    mainImage.addEventListener("mouseover", () => {
+      mainImage.src = "image/white.jpg";
+    });
+    mainImage.addEventListener("mouseout", () => {
+      mainImage.src = "image/R.jpg";
+    });
+  </script>
+</body>
 </html>
