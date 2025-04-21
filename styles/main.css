@@ -8,3 +8,8 @@ header {
 body {
   background: 808080;
 }
+img {
+  border-radius: 8px;
+  width: 50%;
+  height: 50%;
+}
