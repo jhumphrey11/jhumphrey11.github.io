@@ -1,1 +1,7 @@
-
+header {
+  padding: 60px;
+  text-algin: center;
+  background: #00008B;
+  color: white;
+  font-size: 30px;
+}
