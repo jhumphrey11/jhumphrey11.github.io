@@ -6,7 +6,7 @@ header {
   font-size: 30px;
 }
 body {
-  background: 808080;
+  background: #808080;
 }
 img {
   border-radius: 8px;
@@ -23,7 +23,5 @@ li {
   display: inline;
 }
 a {
-  display: block;
-  padding: 8px;
-  background-color: #000000;
+  padding: 8px;  
 }
