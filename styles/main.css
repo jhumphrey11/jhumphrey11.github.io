@@ -34,3 +34,10 @@ nav img {
   height: 20px;
   width:  20px;
 }
+footer {
+  padding: 40px;
+  text-aglin: center;
+  background: #000000;
+  color: white;
+  font-size: 10px;
+}
