@@ -26,3 +26,11 @@ li {
 a {
   padding: 8px;  
 }
+nav {
+  display: flex;
+  position: center;
+}
+nav img {
+  height: 20px;
+  width:  20px;
+}
