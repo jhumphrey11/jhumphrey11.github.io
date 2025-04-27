@@ -41,3 +41,7 @@ footer {
   color: white;
   font-size: 10px;
 }
+iframe {
+  height: 40px;
+  width: 40px;
+}
