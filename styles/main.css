@@ -1,10 +1,13 @@
 header {
   padding: 40px;
-  text-algin: center;
+  text-align: center;
   background: #000000;
   color: white;
   font-size: 30px;
 }
+header img {
+  background-position: left 30px center;
+    }
 body {
   background: #808080;
 }
