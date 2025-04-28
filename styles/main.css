@@ -25,6 +25,7 @@ ul {
   }
 li {
   display: inline;
+  font-size: 30px;
 }
 a {
   padding: 8px;  
