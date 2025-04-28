@@ -39,10 +39,10 @@ nav img {
 }
 footer {
   padding: 40px;
-  text-aglin: center;
+  text-align: center;
   background: #000000;
   color: white;
-  font-size: 10px;
+  font-size: 30px;
 }
 iframe {
   height: 40%;
