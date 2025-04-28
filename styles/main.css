@@ -48,3 +48,7 @@ iframe {
   height: 40%;
   width: 40%;
 }
+p {
+  font-size: 20px;
+  font-family: Tahoma;
+}
