@@ -6,13 +6,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
+    <!-- SlickNav CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
   <title> Elo Cybersecurity </title>
 </head>
   
 <body>
   <header>
     <nav>
-    <ul>
+    <ul id="menu">
     <!-- This is the code for my navigation menu -->
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
@@ -52,6 +54,19 @@ pages worth of information, feel free to check it out.</p>
 
 <!-- This code states that i created this website -->
   <footer> Jakyi Humphrey Elo Cybersecurity 2025 </footer>  
+
+<!-- jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- SlickNav JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<!-- Initialize SlickNav -->
+<script>
+  $(function(){
+    $('#menu').slicknav();
+  });
+</script>
 
 </body>
 </html>
