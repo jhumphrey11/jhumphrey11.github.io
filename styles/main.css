@@ -1,7 +1,7 @@
 header {
   padding: 40px;
   text-align: center;
-  background: #000000;
+  background: #F02F34;
   color: white;
   font-size: 30px;
 }
@@ -9,7 +9,7 @@ header img {
   background-position: left 30px center;
     }
 body {
-  background: #808080;
+  background: #E7D3BB;
 }
 img {
   border-radius: 8px;
