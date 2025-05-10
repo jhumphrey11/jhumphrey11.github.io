@@ -1,61 +1,66 @@
-header {
-  background: #2c3e50;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-header img {
-  background-position: left 30px center;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-  background: #A5A5A5;
-}
-img {
-  border-radius: 8px;
-  width: 100%;
-  height: 50%;
-  postion: absolute;
-}
-ul {
-  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  display: inline;
-  }
-li {
-  display: inline;
-  font-size: 25px;
+  background: #f2f2f2;
 }
-a {
-  padding: 8px;  
-}
-nav {
-  display: flex;
-  position: center;
-}
-nav img {
-  height: 30px;
-  width:  30px;
-}
-footer {
-  padding: 40px;
+
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1em;
   text-align: center;
-  background: #6552D0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
   color: white;
-  font-size: 30px;
 }
-iframe {
-  height: 40%;
-  width: 40%;
+
+/* Slicknav initialization */
+#menu {
+  display: none;
 }
-p {
-  font-size: 20px;
-  font-family: Tahoma;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
 }
-h2 {
-  font-size: 40px;
-  font-family: Bold;
+
+.left-col, .right-col {
+  flex: 1;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
 }
