@@ -20,29 +20,32 @@
   <img src="images/cybersecurity.jpg" alt="Main Logo On Every Page">
   </nav>
   </header>
-<h1>Contact</h1>
-<main>
-  <div class="container">
-  <form action="action_page.php">
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
 
-  <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+  <h1>Contact Us</h1>
 
-  <label for="email">Email</label>
-  <input type="text" id="email" name="email" placeholder="Enter your email..">
+  <main>
+    <form action="thankyou.html" method="get" class="contact-form">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
 
-  <label for="phone number">Phone Number</label>
-  <input type="number" id="phone number" name="phone number" placeholder="Enter your phone number..">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
 
-  <label for="subject">Subject</label>
-  <textarea id="subject" name="subject" placeholder="Tell us about your problem.." style="height:200px"></textarea>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-  <input type="submit" value="Sumbit">
-  </form>
-  </div>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="5" required></textarea>
 
+      <div class="button-group">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </main>
-  </body>
+
+  <footer>
+    <p>Jakyi Humphrey | Elo Cybersecurity | 2025</p>
+  </footer>
+</body>
 </html>
