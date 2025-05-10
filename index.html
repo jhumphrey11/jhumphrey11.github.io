@@ -1,72 +1,164 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <!-- This is my website made by Jakyi Humphrey
-    ITEC 236 Web Application-->
+     ITEC 236 Web Application -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
-    <!-- SlickNav CSS -->
+  <!-- SlickNav CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
   <title> Elo Cybersecurity </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 1em;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+    }
+    .content-section {
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
 </head>
-  
+
 <body>
   <header>
     <nav>
-    <ul id="menu">
-    <!-- This is the code for my navigation menu -->
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutus.html">About Us</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="resources.html">Resources</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <img src="images/cybersecurity.jpg" alt="Main Logo For Every Page"
+      <ul id="menu">
+        <!-- Navigation menu -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="images/cybersecurity.jpg" alt="Main Logo For Every Page">
     </nav>
   </header>
 
-  <!-- This code will introduce people to my website -->
-  <h1> Welcome To Elo Cybersecurity </h1>
+  <main>
+    <h1>Welcome To Elo Cybersecurity</h1>
+    <div class="content-section">
+      <img src="images/space.png" alt="Main image for my webpage" style="max-width: 100%; height: auto;">
+      <p>My name is Jakyi Humphrey. I am the CEO of Elo Cybersecurity. We focus on educating and providing cybersecurity services for the elderly. This information is not limited to just elderly people; it is also open to anyone of age! We have multiple pages worth of information, feel free to check it out.</p>
 
-  <img src="images/space.png" alt="Main image for my webpage">
-<main>
-<p> My name is Jakyi Humphrey. I am the ceo of Elo Cybersecurity. We focus on educating and providing cybersecurity services
-for the elderly. This information is not limited to just elderly people, it is also open to anyone of age! We have multiple
-pages worth of information, feel free to check it out.</p>
+      <h2>Services</h2>
+      <ul>
+        <li>Daily Cybersecurity News</li>
+        <li>Antimalware Software</li>
+        <li>The best recommended tech software</li>
+      </ul>
 
-    <h2>Services</h2>
-    <ul>
-    <li>Daily Cybersecurity News</li>
-    <li>Antimalware Software</li>
-    <li>The best recommend tech software</li>
-    </ul>
+      <!-- Table with site-related data -->
+      <h3>Service Information Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daily Cybersecurity News</td>
+            <td>Stay updated with the latest security threats and news</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Antimalware Software</td>
+            <td>Top-rated tools to keep your devices safe</td>
+            <td>$29.99/year</td>
+          </tr>
+          <tr>
+            <td>Recommended Tech Tools</td>
+            <td>Suggestions for elderly-friendly and secure software</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h2>Client Reviews</h2>
-    <p>Tyson | Stars: ***** Review: This is the best website ever. I can always stay up to date on the latest cybersecurity technology!</p>
-    <p>Grace | Stars: ***** Review: OMG I would have never thought I would find a website like this. I recommend it to my family members!</p>
-    <p>Roger | Stars: ***** Review: I am amazed by the continuous work this website provides. Keep up the good work!!!</p>
-    <button onclick="services.html('formSection').scrollIntoView();" type="button">Click Me To Book a Free Consultation!</button>
-    <iframe src="https://www.youtube.com/watch?v=shQEXpUwaIY"></iframe>
-    
-</main>
+    <div class="content-section">
+      <h2>Client Reviews</h2>
+      <p>Tyson | ⭐⭐⭐⭐⭐<br>Review: This is the best website ever. I can always stay up to date on the latest cybersecurity technology!</p>
+      <p>Grace | ⭐⭐⭐⭐⭐<br>Review: OMG I would have never thought I would find a website like this. I recommend it to my family members!</p>
+      <p>Roger | ⭐⭐⭐⭐⭐<br>Review: I am amazed by the continuous work this website provides. Keep up the good work!!!</p>
+    </div>
 
-<!-- This code states that i created this website -->
-  <footer> Jakyi Humphrey Elo Cybersecurity 2025 </footer>  
+    <div class="content-section">
+      <button onclick="document.getElementById('formSection').scrollIntoView();" type="button">Click Me To Book a Free Consultation!</button>
+    </div>
 
-<!-- jQuery (required) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Embedded video -->
+    <div class="content-section">
+      <h2>Learn More About Cybersecurity</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/shQEXpUwaIY" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-<!-- SlickNav JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <!-- Embedded audio -->
+    <div class="content-section">
+      <h2>Listen to Our Cyber Tips</h2>
+      <audio controls>
+        <source src="audio/cyber-tips.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
-<!-- Initialize SlickNav -->
-<script>
-  $(function(){
-    $('#menu').slicknav();
-  });
-</script>
+  </main>
 
+  <footer>Jakyi Humphrey | Elo Cybersecurity | 2025</footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- SlickNav JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+  <!-- Initialize SlickNav -->
+  <script>
+    $(function () {
+      $('#menu').slicknav();
+    });
+  </script>
 </body>
 </html>
